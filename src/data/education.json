@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Tytuł kursu / szkolenia",
+    "institution": "Nazwa instytucji",
+    "date": "2024 - 2025",
+    "description": "Krótki opis kursu, zdobytych umiejętności i certyfikatów.",
+    "type": "course",
+    "diplomaImage": "/images/48725953-A4A8-489B-B28F-F2FF226759A3 (2).JPEG",
+    "link": ""
+  },
+  {
+    "id": 2,
+    "title": "Nazwa szkoły / uczelni",
+    "institution": "Instytucja edukacyjna",
+    "date": "2020 - 2024",
+    "description": "Kierunek lub profil kształcenia. Opis zdobytej wiedzy i osiągnięć.",
+    "type": "education",
+    "diplomaImage": "/images/48725953-A4A8-489B-B28F-F2FF226759A3 (2).JPEG",
+    "link": ""
+  }
+]

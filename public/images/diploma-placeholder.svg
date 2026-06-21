@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#1A1A1A"/>
+  <rect x="40" y="30" width="320" height="220" rx="8" fill="none" stroke="#D4AF37" stroke-width="0.5" opacity="0.2"/>
+  <text x="200" y="130" text-anchor="middle" fill="#D4AF37" font-family="Antonio, sans-serif" font-size="32" letter-spacing="6" opacity="0.3">DIPLOMA</text>
+  <text x="200" y="160" text-anchor="middle" fill="#f8efe4" font-family="Antonio, sans-serif" font-size="10" letter-spacing="3" opacity="0.2">CERTIFICATE</text>
+  <line x1="100" y1="200" x2="300" y2="200" stroke="#D4AF37" stroke-width="0.5" opacity="0.15"/>
+  <text x="200" y="230" text-anchor="middle" fill="#D4AF37" font-family="Antonio, sans-serif" font-size="8" letter-spacing="4" opacity="0.3">PLACEHOLDER</text>
+</svg>

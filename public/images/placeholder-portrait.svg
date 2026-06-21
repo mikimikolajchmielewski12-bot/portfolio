@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#1A1A1A"/>
+  <circle cx="200" cy="180" r="60" fill="none" stroke="#D4AF37" stroke-width="1.5" opacity="0.3"/>
+  <circle cx="200" cy="180" r="80" fill="none" stroke="#D4AF37" stroke-width="0.5" opacity="0.15"/>
+  <text x="200" y="200" text-anchor="middle" fill="#D4AF37" font-family="Antonio, sans-serif" font-size="14" letter-spacing="4" opacity="0.5">PHOTO</text>
+  <rect x="60" y="280" width="280" height="1" fill="#D4AF37" opacity="0.1"/>
+  <text x="200" y="310" text-anchor="middle" fill="#f8efe4" font-family="Antonio, sans-serif" font-size="10" letter-spacing="3" opacity="0.3">PORTRAIT</text>
+</svg>

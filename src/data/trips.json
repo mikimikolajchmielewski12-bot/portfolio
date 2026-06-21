@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "title": "Nazwa wyjazdu / konferencji",
+    "location": "Miasto, Kraj",
+    "date": "2025",
+    "description": "Opis wyjazdu, konferencji lub wydarzenia, w którym uczestniczyłem.",
+    "image": "/images/trip-placeholder.svg"
+  }
+]

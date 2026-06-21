@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#1A1A1A"/>
+  <circle cx="200" cy="150" r="40" fill="none" stroke="#D4AF37" stroke-width="0.5" opacity="0.15"/>
+  <circle cx="400" cy="200" r="60" fill="none" stroke="#D4AF37" stroke-width="0.5" opacity="0.1"/>
+  <circle cx="300" cy="250" r="80" fill="none" stroke="#D4AF37" stroke-width="0.5" opacity="0.08"/>
+  <text x="300" y="205" text-anchor="middle" fill="#D4AF37" font-family="Antonio, sans-serif" font-size="28" letter-spacing="6" opacity="0.25">TRAVEL</text>
+  <text x="300" y="235" text-anchor="middle" fill="#f8efe4" font-family="Antonio, sans-serif" font-size="10" letter-spacing="3" opacity="0.2">CONFERENCE</text>
+</svg>

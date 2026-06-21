@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "company": "Nazwa firmy",
+    "position": "Stanowisko",
+    "startDate": "2024",
+    "endDate": "obecnie",
+    "description": "Opis obowiązków i osiągnięć na tym stanowisku.",
+    "type": "work"
+  },
+  {
+    "id": 2,
+    "company": "Nazwa organizacji",
+    "position": "Wolontariat / Praktyka",
+    "startDate": "2023",
+    "endDate": "2024",
+    "description": "Opis działań wolontariackich lub praktyk.",
+    "type": "volunteer"
+  }
+]

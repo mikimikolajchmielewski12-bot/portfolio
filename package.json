@@ -1,0 +1,31 @@
+{
+  "name": "mikolaj-chmielewski-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Premium portfolio - Mikołaj Chmielewski",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build",
+    "sync": "node scripts/sync-linkedin.mjs"
+  },
+  "keywords": ["portfolio", "premium", "3d"],
+  "author": "Mikołaj Chmielewski",
+  "license": "MIT",
+  "dependencies": {
+    "framer-motion": "^12.40.0",
+    "next": "^16.2.9",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.1",
+    "@types/node": "^26.0.0",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "postcss": "^8.5.15",
+    "tailwindcss": "^4.3.1",
+    "typescript": "^6.0.3"
+  }
+}
