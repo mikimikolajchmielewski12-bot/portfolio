@@ -7,16 +7,16 @@ import { asset } from "@/lib/asset";
 export function ContactSection() {
   return (
     <section id="contact" className="relative py-32 px-6">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gold/[0.03] to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-earth/[0.03] to-transparent" />
 
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <ScrollReveal>
           <div className="flex items-center gap-4 mb-4 justify-center">
-            <div className="h-[1px] w-12 bg-gradient-to-r from-transparent to-gold/30" />
-            <span className="text-gold text-xs tracking-[0.3em] uppercase">
+            <div className="h-[1px] w-12 bg-gradient-to-r from-transparent to-earth/30" />
+            <span className="text-earth text-xs tracking-[0.3em] uppercase">
               Kontakt
             </span>
-            <div className="h-[1px] w-12 bg-gradient-to-l from-transparent to-gold/30" />
+            <div className="h-[1px] w-12 bg-gradient-to-l from-transparent to-earth/30" />
           </div>
         </ScrollReveal>
 
@@ -24,7 +24,7 @@ export function ContactSection() {
           <h2 className="text-4xl md:text-5xl font-bold text-cream leading-[1.1] tracking-[-0.02em] uppercase mb-6">
             Porozmawiajmy
             <br />
-            <span className="gold-gradient">o współpracy</span>
+            <span className="earth-gradient">o współpracy</span>
           </h2>
         </ScrollReveal>
 
@@ -39,10 +39,10 @@ export function ContactSection() {
           <div className="flex flex-col items-center gap-6">
             <a
               href={`mailto:${profile.email}`}
-              className="group relative px-10 py-4 bg-gold text-black text-sm tracking-[0.2em] uppercase font-semibold overflow-hidden rounded-full transition-all duration-300 hover:shadow-[0_0_40px_rgba(212,175,55,0.3)]"
+              className="group relative px-10 py-4 bg-earth text-black text-sm tracking-[0.2em] uppercase font-semibold overflow-hidden rounded-full transition-all duration-300 hover:shadow-[0_0_40px_rgba(168,152,136,0.35)]"
             >
               <span className="relative z-10">Wyślij wiadomość</span>
-              <div className="absolute inset-0 bg-gold-light opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-earth-light opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </a>
 
             <div className="flex items-center gap-6 mt-4">
@@ -50,7 +50,7 @@ export function ContactSection() {
                 href={profile.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-cream/40 hover:text-gold text-sm tracking-[0.2em] uppercase transition-colors"
+                className="text-cream/40 hover:text-earth text-sm tracking-[0.2em] uppercase transition-colors"
               >
                 LinkedIn
               </a>
@@ -58,7 +58,7 @@ export function ContactSection() {
               <a
                 href={asset("/images/CV Mikołaj Chmielewski.pdf")}
                 download
-                className="text-cream/40 hover:text-gold text-sm tracking-[0.2em] uppercase transition-colors"
+                className="text-cream/40 hover:text-earth text-sm tracking-[0.2em] uppercase transition-colors"
               >
                 Pobierz CV
               </a>

@@ -20,7 +20,7 @@ export function ProfileImage3D({ src, alt }: ProfileImage3DProps) {
       }}
     >
       <div
-        className="w-full h-full rounded-full overflow-hidden border-2 border-gold/30 shadow-[0_0_60px_rgba(212,175,55,0.15)] transition-transform duration-200 ease-out"
+        className="w-full h-full rounded-full overflow-hidden border-2 border-earth/30 shadow-[0_0_60px_rgba(168,152,136,0.2)] transition-transform duration-200 ease-out"
         style={{
           transform: `rotateX(${tilt.rotateX}deg) rotateY(${tilt.rotateY}deg)`,
           transformStyle: "preserve-3d",
@@ -37,14 +37,14 @@ export function ProfileImage3D({ src, alt }: ProfileImage3DProps) {
       </div>
 
       <div
-        className="absolute -inset-4 rounded-full border border-gold/10 pointer-events-none"
+        className="absolute -inset-4 rounded-full border border-earth/10 pointer-events-none"
         style={{
           transform: `rotateX(${tilt.rotateX * 0.5}deg) rotateY(${tilt.rotateY * 0.5}deg) translateZ(-20px)`,
           transformStyle: "preserve-3d",
         }}
       />
       <div
-        className="absolute -inset-8 rounded-full border border-gold/5 pointer-events-none"
+        className="absolute -inset-8 rounded-full border border-earth/5 pointer-events-none"
         style={{
           transform: `rotateX(${tilt.rotateX * 0.3}deg) rotateY(${tilt.rotateY * 0.3}deg) translateZ(-40px)`,
           transformStyle: "preserve-3d",

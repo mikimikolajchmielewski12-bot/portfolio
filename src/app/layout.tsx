@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { FloatingParticles } from "@/components/FloatingParticles";
 
 export const metadata: Metadata = {
   title: "Mikołaj Chmielewski | Premium Portfolio",
@@ -23,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="pl" className="scroll-smooth">
       <body className="bg-black text-cream font-antonio antialiased">
+        <FloatingParticles />
         <Navigation />
         <main>{children}</main>
         <Footer />

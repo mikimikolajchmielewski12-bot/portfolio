@@ -1,10 +1,34 @@
 [
   {
     "id": 1,
-    "title": "Nazwa wyjazdu / konferencji",
-    "location": "Miasto, Kraj",
+    "title": "Konferencja Developer Connect",
+    "location": "Warszawa, Polska",
     "date": "2025",
-    "description": "Opis wyjazdu, konferencji lub wydarzenia, w którym uczestniczyłem.",
+    "description": "Udział w największej konferencji frontendowej w Polsce. Warsztaty z Next.js, Tailwind CSS i animacji 3D w przeglądarce. Networking z developerami z całej Europy.",
+    "image": "/images/trip-placeholder.svg"
+  },
+  {
+    "id": 2,
+    "title": "Europejskie Forum Młodych Liderów",
+    "location": "Bruksela, Belgia",
+    "date": "2025",
+    "description": "Tygodniowe spotkanie młodych liderów z całej Europy. Debaty o przyszłości technologii, edukacji i zrównoważonego rozwoju. Warsztaty z negocjacji i wystąpień publicznych.",
+    "image": "/images/trip-placeholder.svg"
+  },
+  {
+    "id": 3,
+    "title": "Warsztaty AI & Machine Learning",
+    "location": "Kraków, Polska",
+    "date": "2024",
+    "description": "Intensywne warsztaty z praktycznego zastosowania uczenia maszynowego. Praca nad projektem predykcji danych z użyciem Python i TensorFlow.",
+    "image": "/images/trip-placeholder.svg"
+  },
+  {
+    "id": 4,
+    "title": "Startup Weekend",
+    "location": "Gdańsk, Polska",
+    "date": "2024",
+    "description": "54-godzinny maraton tworzenia startupu. W zespole 5-osobowym stworzyliśmy prototyp aplikacji i zaprezentowaliśmy przed jury. Zdobycie wyróżnienia za najlepszy design.",
     "image": "/images/trip-placeholder.svg"
   }
 ]

@@ -8,15 +8,15 @@ import { asset } from "@/lib/asset";
 export function AboutSection() {
   return (
     <section id="about" className="relative py-32 px-6">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gold/[0.02] to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-earth/[0.02] to-transparent" />
 
       <div className="max-w-7xl mx-auto relative z-10">
         <ScrollReveal>
           <div className="flex items-center gap-4 mb-16">
-            <span className="text-gold text-xs tracking-[0.3em] uppercase">
+            <span className="text-earth text-xs tracking-[0.3em] uppercase">
               O mnie
             </span>
-            <div className="h-[1px] flex-1 bg-gradient-to-r from-gold/30 to-transparent" />
+            <div className="h-[1px] flex-1 bg-gradient-to-r from-earth/30 to-transparent" />
           </div>
         </ScrollReveal>
 
@@ -33,7 +33,7 @@ export function AboutSection() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               </div>
-              <div className="absolute -bottom-4 -right-4 w-full h-full border border-gold/20 rounded-2xl -z-10" />
+              <div className="absolute -bottom-4 -right-4 w-full h-full border border-earth/20 rounded-2xl -z-10" />
             </div>
           </ScrollReveal>
 
@@ -42,7 +42,7 @@ export function AboutSection() {
               <h2 className="text-4xl md:text-5xl font-bold text-cream leading-[1.1] tracking-[-0.02em] uppercase mb-6">
                 Kim
                 <br />
-                <span className="gold-gradient">jestem?</span>
+                <span className="earth-gradient">jestem?</span>
               </h2>
             </ScrollReveal>
 
@@ -60,7 +60,7 @@ export function AboutSection() {
                   { value: "∞", label: "Kursy" },
                 ].map((stat) => (
                   <div key={stat.label} className="text-center">
-                    <div className="text-3xl md:text-4xl font-bold text-gold mb-1">
+                    <div className="text-3xl md:text-4xl font-bold text-earth mb-1">
                       {stat.value}
                     </div>
                     <div className="text-cream/40 text-xs tracking-[0.2em] uppercase">

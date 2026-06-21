@@ -11,15 +11,15 @@ export function EducationSection() {
 
   return (
     <section id="education" className="relative py-32 px-6 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gold/[0.02] to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-earth/[0.02] to-transparent" />
 
       <div ref={ref} className="max-w-7xl mx-auto relative z-10">
         <ScrollReveal>
           <div className="flex items-center gap-4 mb-4">
-            <span className="text-gold text-xs tracking-[0.3em] uppercase">
+            <span className="text-earth text-xs tracking-[0.3em] uppercase">
               Edukacja
             </span>
-            <div className="h-[1px] flex-1 bg-gradient-to-r from-gold/30 to-transparent" />
+            <div className="h-[1px] flex-1 bg-gradient-to-r from-earth/30 to-transparent" />
           </div>
         </ScrollReveal>
 
@@ -27,7 +27,7 @@ export function EducationSection() {
           <h2 className="text-4xl md:text-5xl font-bold text-cream leading-[1.1] tracking-[-0.02em] uppercase mb-16">
             Kursy &amp;
             <br />
-            <span className="gold-gradient">Szkolenia</span>
+            <span className="earth-gradient">Szkolenia</span>
           </h2>
         </ScrollReveal>
 

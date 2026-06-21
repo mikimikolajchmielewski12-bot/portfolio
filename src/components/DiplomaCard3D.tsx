@@ -55,7 +55,7 @@ export function DiplomaCard3D({
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
             <div className="absolute bottom-4 left-4 right-4">
-              <span className="text-gold text-xs tracking-[0.2em] uppercase">
+              <span className="text-earth text-xs tracking-[0.2em] uppercase">
                 {date}
               </span>
             </div>
@@ -65,7 +65,7 @@ export function DiplomaCard3D({
             <h3 className="text-cream text-lg tracking-[0.1em] uppercase mb-1">
               {title}
             </h3>
-            <p className="text-gold/80 text-xs tracking-[0.15em] uppercase mb-3">
+            <p className="text-earth/80 text-xs tracking-[0.15em] uppercase mb-3">
               {institution}
             </p>
             <p className="text-cream/60 text-sm leading-relaxed">
@@ -73,7 +73,7 @@ export function DiplomaCard3D({
             </p>
           </div>
 
-          <div className="absolute top-0 left-0 w-full h-full rounded-2xl ring-1 ring-inset ring-gold/10 group-hover:ring-gold/30 transition-all duration-500 pointer-events-none" />
+          <div className="absolute top-0 left-0 w-full h-full rounded-2xl ring-1 ring-inset ring-earth/10 group-hover:ring-earth/30 transition-all duration-500 pointer-events-none" />
         </div>
       </div>
     </motion.div>

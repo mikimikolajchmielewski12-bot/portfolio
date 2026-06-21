@@ -11,10 +11,10 @@ export function TripsSection() {
       <div className="max-w-7xl mx-auto">
         <ScrollReveal>
           <div className="flex items-center gap-4 mb-4">
-            <span className="text-gold text-xs tracking-[0.3em] uppercase">
+            <span className="text-earth text-xs tracking-[0.3em] uppercase">
               Wyjazdy
             </span>
-            <div className="h-[1px] flex-1 bg-gradient-to-r from-gold/30 to-transparent" />
+            <div className="h-[1px] flex-1 bg-gradient-to-r from-earth/30 to-transparent" />
           </div>
         </ScrollReveal>
 
@@ -22,14 +22,14 @@ export function TripsSection() {
           <h2 className="text-4xl md:text-5xl font-bold text-cream leading-[1.1] tracking-[-0.02em] uppercase mb-16">
             Konferencje &amp;
             <br />
-            <span className="gold-gradient">Wydarzenia</span>
+            <span className="earth-gradient">Wydarzenia</span>
           </h2>
         </ScrollReveal>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {trips.map((item, index) => (
             <ScrollReveal key={item.id} delay={index * 0.1}>
-              <div className="glass rounded-2xl overflow-hidden group hover:border-gold/30 transition-all duration-500">
+              <div className="glass rounded-2xl overflow-hidden group hover:border-earth/30 transition-all duration-500">
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src={asset(item.image)}
@@ -40,7 +40,7 @@ export function TripsSection() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
                   <div className="absolute bottom-4 left-4">
-                    <span className="text-gold text-xs tracking-[0.2em] uppercase">
+                    <span className="text-earth text-xs tracking-[0.2em] uppercase">
                       {item.date}
                     </span>
                     <p className="text-cream/50 text-[10px] tracking-[0.2em] uppercase">

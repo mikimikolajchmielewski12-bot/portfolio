@@ -1,21 +1,51 @@
 [
   {
     "id": 1,
-    "title": "Tytuł kursu / szkolenia",
-    "institution": "Nazwa instytucji",
-    "date": "2024 - 2025",
-    "description": "Krótki opis kursu, zdobytych umiejętności i certyfikatów.",
+    "title": "Nowoczesne Technologie Webowe",
+    "institution": "Akademia Rozwoju IT",
+    "date": "2025",
+    "description": "Zaawansowany kurs obejmujący React, Next.js oraz TypeScript. Projekt zaliczeniowy – w pełni funkcjonalna aplikacja portfolio z efektami 3D i animacjami.",
     "type": "course",
     "diplomaImage": "/images/48725953-A4A8-489B-B28F-F2FF226759A3 (2).JPEG",
     "link": ""
   },
   {
     "id": 2,
-    "title": "Nazwa szkoły / uczelni",
-    "institution": "Instytucja edukacyjna",
+    "title": "Sztuczna Inteligencja w Biznesie",
+    "institution": "Google Digital Garage",
+    "date": "2025",
+    "description": "Kurs wprowadzający do wykorzystania AI w procesach biznesowych. Tematy: machine learning, analiza danych, automatyzacja procesów.",
+    "type": "course",
+    "diplomaImage": "/images/48725953-A4A8-489B-B28F-F2FF226759A3 (2).JPEG",
+    "link": ""
+  },
+  {
+    "id": 3,
+    "title": "Liderstwo i Zarządzanie Zespołem",
+    "institution": "Stowarzyszenie Młodych Liderów",
+    "date": "2024",
+    "description": "Szkolenie z zakresu zarządzania projektami, komunikacji w zespole oraz motywowania współpracowników. Praktyczne warsztaty z case study.",
+    "type": "course",
+    "diplomaImage": "/images/48725953-A4A8-489B-B28F-F2FF226759A3 (2).JPEG",
+    "link": ""
+  },
+  {
+    "id": 4,
+    "title": "Technikum / Liceum",
+    "institution": "Zespół Szkół Technicznych",
     "date": "2020 - 2024",
-    "description": "Kierunek lub profil kształcenia. Opis zdobytej wiedzy i osiągnięć.",
+    "description": "Kierunek: technik informatyk. Zdobycie solidnych podstaw z programowania, administracji sieciami oraz baz danych. Projekty zespołowe i udział w konkursach.",
     "type": "education",
+    "diplomaImage": "/images/48725953-A4A8-489B-B28F-F2FF226759A3 (2).JPEG",
+    "link": ""
+  },
+  {
+    "id": 5,
+    "title": "Certyfikat Językowy B2",
+    "institution": "British Council",
+    "date": "2023",
+    "description": "Certyfikat potwierdzający znajomość języka angielskiego na poziomie średniozaawansowanym wyższym (B2). Umiejętność swobodnej komunikacji w środowisku międzynarodowym.",
+    "type": "course",
     "diplomaImage": "/images/48725953-A4A8-489B-B28F-F2FF226759A3 (2).JPEG",
     "link": ""
   }

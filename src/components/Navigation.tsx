@@ -28,7 +28,7 @@ export function Navigation() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-black/90 backdrop-blur-lg border-b border-gold/20"
+          ? "bg-black/90 backdrop-blur-lg border-b border-earth/20"
           : "bg-transparent"
       }`}
     >
@@ -51,10 +51,10 @@ export function Navigation() {
             <a
               key={item.href}
               href={item.href}
-              className="text-cream/70 hover:text-gold text-sm tracking-[0.15em] uppercase transition-all duration-300 relative group"
+              className="text-cream/70 hover:text-earth text-sm tracking-[0.15em] uppercase transition-all duration-300 relative group"
             >
               {item.label}
-              <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-gold transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-earth transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
         </div>
@@ -74,7 +74,7 @@ export function Navigation() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-black/95 backdrop-blur-lg border-b border-gold/20"
+            className="md:hidden bg-black/95 backdrop-blur-lg border-b border-earth/20"
           >
             <div className="px-6 py-4 flex flex-col gap-4">
               {navItems.map((item) => (
@@ -82,7 +82,7 @@ export function Navigation() {
                   key={item.href}
                   href={item.href}
                   onClick={() => setMobileOpen(false)}
-                  className="text-cream/70 hover:text-gold text-sm tracking-[0.15em] uppercase transition-colors"
+                  className="text-cream/70 hover:text-earth text-sm tracking-[0.15em] uppercase transition-colors"
                 >
                   {item.label}
                 </a>

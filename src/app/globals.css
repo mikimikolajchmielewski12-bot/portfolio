@@ -3,17 +3,19 @@
 
 @theme {
   --color-cream: #f8efe4;
-  --color-gold: #D4AF37;
-  --color-gold-light: #E8C547;
-  --color-gold-dark: #B8962E;
+  --color-earth: #A89888;
+  --color-earth-light: #C9BBA8;
+  --color-earth-dark: #7D6E5F;
+  --color-stone: #8B7E6F;
+  --color-sand: #D6C9B8;
   --color-ebony: #0A0A0A;
-  --color-charcoal: #1A1A1A;
+  --color-charcoal: #2A2725;
   --font-antonio: "Antonio", sans-serif;
 }
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: #D4AF37 #0A0A0A;
+  scrollbar-color: #A89888 #0A0A0A;
 }
 
 body {
@@ -23,7 +25,7 @@ body {
 }
 
 ::selection {
-  background-color: #D4AF37;
+  background-color: #A89888;
   color: #000000;
 }
 
@@ -35,18 +37,18 @@ html {
   background: rgba(10, 10, 10, 0.6);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(212, 175, 55, 0.15);
+  border: 1px solid rgba(168, 152, 136, 0.15);
 }
 
-.gold-gradient {
-  background: linear-gradient(135deg, #D4AF37 0%, #E8C547 50%, #B8962E 100%);
+.earth-gradient {
+  background: linear-gradient(135deg, #A89888 0%, #C9BBA8 50%, #7D6E5F 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.gold-border {
-  border-image: linear-gradient(135deg, #D4AF37, #E8C547, #B8962E) 1;
+.earth-border {
+  border-image: linear-gradient(135deg, #A89888, #C9BBA8, #7D6E5F) 1;
 }
 
 .perspective-1000 {
@@ -76,9 +78,20 @@ html {
 }
 
 .shimmer {
-  background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.1) 50%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, rgba(168, 152, 136, 0.1) 50%, transparent 100%);
   background-size: 200% 100%;
   animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes particle-drift {
+  0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(-120vh) rotate(720deg); opacity: 0; }
+}
+
+.animate-particle {
+  animation: particle-drift linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {

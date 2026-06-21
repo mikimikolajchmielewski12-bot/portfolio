@@ -4,7 +4,7 @@ import { asset } from "@/lib/asset";
 
 export function Footer() {
   return (
-    <footer className="border-t border-gold/10 py-12 px-6">
+    <footer className="border-t border-earth/10 py-12 px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex items-center gap-3">
           <Image
@@ -23,14 +23,14 @@ export function Footer() {
           <Link
             href="https://www.linkedin.com/in/miko%C5%82aj-chmielewski-aa18a82b3"
             target="_blank"
-            className="text-cream/30 hover:text-gold text-xs tracking-[0.15em] uppercase transition-colors"
+            className="text-cream/30 hover:text-earth text-xs tracking-[0.15em] uppercase transition-colors"
           >
             LinkedIn
           </Link>
           <a
             href={asset("/images/CV Mikołaj Chmielewski.pdf")}
             download
-            className="text-cream/30 hover:text-gold text-xs tracking-[0.15em] uppercase transition-colors"
+            className="text-cream/30 hover:text-earth text-xs tracking-[0.15em] uppercase transition-colors"
           >
             CV
           </a>
