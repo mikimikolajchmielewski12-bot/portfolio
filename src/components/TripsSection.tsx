@@ -3,6 +3,7 @@
 import { ScrollReveal } from "./ScrollReveal";
 import { trips } from "@/lib/data";
 import Image from "next/image";
+import { asset } from "@/lib/asset";
 
 export function TripsSection() {
   return (
@@ -31,7 +32,7 @@ export function TripsSection() {
               <div className="glass rounded-2xl overflow-hidden group hover:border-gold/30 transition-all duration-500">
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src={item.image}
+                    src={asset(item.image)}
                     alt={item.title}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-110"

@@ -4,6 +4,7 @@ import { useScrollRotation } from "@/hooks/useScrollRotation";
 import { DiplomaCard3D } from "./DiplomaCard3D";
 import { ScrollReveal } from "./ScrollReveal";
 import { education } from "@/lib/data";
+import { asset } from "@/lib/asset";
 
 export function EducationSection() {
   const { ref, rotation } = useScrollRotation();
@@ -38,7 +39,7 @@ export function EducationSection() {
                 institution={item.institution}
                 date={item.date}
                 description={item.description}
-                imageSrc={item.diplomaImage}
+                imageSrc={asset(item.diplomaImage)}
                 index={index}
                 total={education.length}
                 rotation={rotation}

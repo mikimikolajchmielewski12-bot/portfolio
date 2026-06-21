@@ -3,6 +3,7 @@
 import { ScrollReveal } from "./ScrollReveal";
 import { profile } from "@/lib/data";
 import Image from "next/image";
+import { asset } from "@/lib/asset";
 
 export function AboutSection() {
   return (
@@ -24,7 +25,7 @@ export function AboutSection() {
             <div className="relative">
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden">
                 <Image
-                  src={profile.secondaryPhoto}
+                  src={asset(profile.secondaryPhoto)}
                   alt={profile.name}
                   fill
                   className="object-cover"

@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
+import { asset } from "@/lib/asset";
 
 const navItems = [
   { label: "O mnie", href: "#about" },
@@ -32,10 +34,12 @@ export function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className="flex items-center gap-3">
-          <img
-            src="/images/LOGO M.CH. BIAŁE.png"
+          <Image
+            src={asset("/images/LOGO M.CH. BIAŁE.png")}
             alt="M.CH."
-            className="h-8 w-auto brightness-0 invert"
+            width={32}
+            height={32}
+            className="object-contain brightness-0 invert"
           />
           <span className="text-cream text-lg tracking-[0.2em] uppercase hidden sm:block">
             Mikołaj Chmielewski

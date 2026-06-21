@@ -2,6 +2,7 @@
 
 import { ScrollReveal } from "./ScrollReveal";
 import { profile } from "@/lib/data";
+import { asset } from "@/lib/asset";
 
 export function ContactSection() {
   return (
@@ -55,7 +56,7 @@ export function ContactSection() {
               </a>
               <span className="text-cream/20">|</span>
               <a
-                href="/images/CV Mikołaj Chmielewski.pdf"
+                href={asset("/images/CV Mikołaj Chmielewski.pdf")}
                 download
                 className="text-cream/40 hover:text-gold text-sm tracking-[0.2em] uppercase transition-colors"
               >
