@@ -1,4 +1,4 @@
-const basePath = process.env.NODE_ENV === "production" ? "/portfolio" : "";
+const basePath = process.env.NODE_ENV === "production" ? "/mikolaj-chmielewski-portfolio" : "";
 
 export function asset(path: string): string {
   if (path.startsWith("/")) {
