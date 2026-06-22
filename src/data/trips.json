@@ -1,34 +1,50 @@
 [
   {
     "id": 1,
-    "title": "Konferencja Developer Connect",
-    "location": "Warszawa, Polska",
+    "title": "Erasmus+ Praktyki Zagraniczne — Z Budowlanką Po Europie",
+    "location": "Almancil, Portugalia",
     "date": "2025",
-    "description": "Udział w największej konferencji frontendowej w Polsce. Warsztaty z Next.js, Tailwind CSS i animacji 3D w przeglądarce. Networking z developerami z całej Europy.",
+    "description": "Miesięczne praktyki zagraniczne w ramach projektu Erasmus+. Zdobywanie doświadczenia zawodowego w branży architektoniczno-budowlanej w międzynarodowym środowisku. Rozwój umiejętności językowych i kulturowych.",
     "image": "/images/trip-placeholder.svg"
   },
   {
     "id": 2,
-    "title": "Europejskie Forum Młodych Liderów",
-    "location": "Bruksela, Belgia",
-    "date": "2025",
-    "description": "Tygodniowe spotkanie młodych liderów z całej Europy. Debaty o przyszłości technologii, edukacji i zrównoważonego rozwoju. Warsztaty z negocjacji i wystąpień publicznych.",
+    "title": "Erasmus+ Z Budowlanką Po Europie",
+    "location": "Póvoa de Varzim, Portugalia",
+    "date": "2024",
+    "description": "Udział w projekcie Erasmus+ obejmującym praktyki zawodowe i rozwój kompetencji w międzynarodowym zespole. Poznawanie portugalskiej kultury i architektury.",
     "image": "/images/trip-placeholder.svg"
   },
   {
     "id": 3,
-    "title": "Warsztaty AI & Machine Learning",
-    "location": "Kraków, Polska",
-    "date": "2024",
-    "description": "Intensywne warsztaty z praktycznego zastosowania uczenia maszynowego. Praca nad projektem predykcji danych z użyciem Python i TensorFlow.",
+    "title": "Erasmus+ Eco Champions — Zerowaste",
+    "location": "Sewilla, Hiszpania",
+    "date": "2024/2025",
+    "description": "Międzynarodowy projekt ekologiczny 'Eco Champions: Budowlanka dba o klimat'. Warsztaty z zero waste, zrównoważonego rozwoju i ochrony środowiska w hiszpańskiej Sewilli.",
     "image": "/images/trip-placeholder.svg"
   },
   {
     "id": 4,
-    "title": "Startup Weekend",
-    "location": "Gdańsk, Polska",
-    "date": "2024",
-    "description": "54-godzinny maraton tworzenia startupu. W zespole 5-osobowym stworzyliśmy prototyp aplikacji i zaprezentowaliśmy przed jury. Zdobycie wyróżnienia za najlepszy design.",
+    "title": "ESCAPE 4 CHANGE — Youth Exchange",
+    "location": "Valsinni, Włochy",
+    "date": "2025",
+    "description": "8-dniowa międzynarodowa wymiana młodzieżowa we Włoszech organizowana przez COSMOS. Tematyka: zmiana społeczna, aktywizm młodzieżowy i rozwój kompetencji miękkich.",
+    "image": "/images/trip-placeholder.svg"
+  },
+  {
+    "id": 5,
+    "title": "Scenes to Screne — Wymiana Młodzieżowa",
+    "location": "Kraków, Polska",
+    "date": "2025",
+    "description": "Międzynarodowa wymiana młodzieżowa organizowana przez Fundację Platformy Integracji Młodzieży. Warsztaty artystyczne i medialne, prezentacja prac w Muzeum Fotografii w Krakowie.",
+    "image": "/images/trip-placeholder.svg"
+  },
+  {
+    "id": 6,
+    "title": "European Forum of Young Leaders 2026",
+    "location": "Bruksela, Belgia",
+    "date": "2026",
+    "description": "Udział w Europejskim Forum Młodych Liderów — międzynarodowym wydarzeniu łączącym młodych liderów z całej Europy w celu debaty o przyszłości, technologii i społeczeństwie.",
     "image": "/images/trip-placeholder.svg"
   }
 ]

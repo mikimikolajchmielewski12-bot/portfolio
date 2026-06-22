@@ -1,38 +1,56 @@
 [
   {
     "id": 1,
-    "company": "TechSolutions Sp. z o.o.",
-    "position": "Junior Frontend Developer",
-    "startDate": "2025",
+    "company": "Młodzieżowa Rada Miasta Chełm",
+    "position": "Radny MRM — Przewodniczący Komisji ds. Promocji i Social Mediów",
+    "startDate": "2024",
     "endDate": "obecnie",
-    "description": "Tworzenie nowoczesnych interfejsów użytkownika w React i TypeScript. Współpraca z zespołem UX/UI przy projektowaniu responsywnych aplikacji webowych. Optymalizacja wydajności i dostępności istniejących rozwiązań.",
-    "type": "work"
+    "description": "Przewodniczenie komisji ds. promocji i social mediów. Członek komisji ds. świadomości cyfrowej i dobrostanu młodzieży. Koordynacja działań promocyjnych i komunikacji w mediach społecznościowych. Udział w I Prezydenckim Kongresie Rad Młodzieżowych oraz w szkoleniach PROM i budowie krajowej strategii młodzieżowej.",
+    "type": "volunteer"
   },
   {
     "id": 2,
-    "company": "StartupHub",
-    "position": "Stażysta Frontend Developer",
-    "startDate": "2024",
-    "endDate": "2025",
-    "description": "Udział w tworzeniu platformy e-commerce. Implementacja komponentów w React, integracja z REST API, praca z systemem kontroli wersji Git w zespole agile.",
-    "type": "work"
+    "company": "Fundacja Platformy Integracji Młodzieży (PIM)",
+    "position": "Koordynator Projektów Międzynarodowych",
+    "startDate": "2025",
+    "endDate": "obecnie",
+    "description": "Koordynacja międzynarodowych projektów młodzieżowych. Organizacja wymian i wydarzeń międzynarodowych. Współpraca z partnerami zagranicznymi przy realizacji projektów Erasmus+.",
+    "type": "volunteer"
   },
   {
     "id": 3,
-    "company": "Fundacja Cyfrowa Przyszłość",
-    "position": "Wolontariat – Mentor IT",
-    "startDate": "2024",
+    "company": "Zwolnieni z Teorii",
+    "position": "Lider Projektów Społecznych",
+    "startDate": "2023",
     "endDate": "obecnie",
-    "description": "Prowadzenie warsztatów z podstaw programowania dla młodzieży. Pomoc w organizacji hackathonów i spotkań edukacyjnych. Opieka nad grupą początkujących adeptów programowania.",
+    "description": "Lider projektów społecznych w ramach ogólnopolskiej olimpiady 'Zwolnieni z Teorii'. Realizacja projektów: 'Zielone Łapki' (ekologia i ochrona zwierząt) oraz 'Buduj z nami przyszłość zwierząt'. Organizacja wydarzeń, zarządzanie zespołem i budowanie kampanii społecznych.",
     "type": "volunteer"
   },
   {
     "id": 4,
-    "company": "Koło Naukowe Innowacji",
-    "position": "Członek Zarządu",
-    "startDate": "2023",
-    "endDate": "2024",
-    "description": "Organizacja wydarzeń technologicznych i warsztatów dla studentów. Koordynacja projektów zespołowych, zarządzanie budżetem i kontakt z partnerami zewnętrznymi.",
+    "company": "OGRODY BARTOSIAK",
+    "position": "Stażysta — Projektowanie Ogrodów",
+    "startDate": "08.2025",
+    "endDate": "08.2025",
+    "description": "Płatny staż w firmie architektonicznej w ramach projektu 'Czas na Zawodowców'. Udział w projektowaniu i urządzaniu ogrodów — prace koncepcyjne, dobór roślinności, realizacja nasadzeń i elementów małej architektury.",
+    "type": "work"
+  },
+  {
+    "id": 5,
+    "company": "Zespół Szkół Budowlanych i Geodezyjnych w Chełmie",
+    "position": "Social Media Manager",
+    "startDate": "2024",
+    "endDate": "obecnie",
+    "description": "Prowadzenie szkolnych mediów społecznościowych. Tworzenie treści promujących wydarzenia szkolne, osiągnięcia uczniów i działalność Erasmus+. Prowadzenie wystąpień w Erasmus Room podczas dni promocyjnych szkoły.",
+    "type": "volunteer"
+  },
+  {
+    "id": 6,
+    "company": "Organizacja Wydarzeń Lokalnych i Ogólnopolskich",
+    "position": "Współorganizator",
+    "startDate": "2024",
+    "endDate": "obecnie",
+    "description": "Współorganizacja licznych wydarzeń: 'Chełmski Dzień NGO', 'Nakręcamy Chełm na biało-czerwono', ogólnopolski projekt 'Mały Mistrz', VII Jagiełło Półmaraton Chełmski, festyn 'Rodzinna Strefa Aktywności', konferencja 'Projekt #Dorosłość', ogólnopolska konferencja 'Młodzi. Aktywni. Utalentowani'.",
     "type": "volunteer"
   }
 ]

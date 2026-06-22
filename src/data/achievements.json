@@ -1,42 +1,50 @@
 [
   {
     "id": 1,
-    "title": "I Miejsce w Hackathonie",
+    "title": "Stypendium Lubelska Kuźnia Talentów 2025-2026",
     "date": "2025",
-    "description": "Zwycięstwo w ogólnopolskim hackathonie 'CodeForFuture' z projektem aplikacji do zarządzania energią w smart home. Nagroda: 10 000 zł i akceleracja startupu.",
-    "icon": "🏆",
+    "description": "Dwukrotne uzyskanie stypendium 'Lubelska Kuźnia Talentów' — programu wspierającego szczególnie uzdolnioną młodzież z województwa lubelskiego.",
+    "icon": "🎓",
     "link": ""
   },
   {
     "id": 2,
-    "title": "Certyfikat AWS Cloud Practitioner",
+    "title": "Laureat Olimpiady Wiedzy i Umiejętności Rolniczych",
     "date": "2025",
-    "description": "Międzynarodowy certyfikat potwierdzający znajomość podstaw chmury AWS, w tym usług compute, storage, networking i bezpieczeństwa.",
-    "icon": "☁️",
+    "description": "Zdobycie tytułu laureata etapu okręgowego Olimpiady Wiedzy i Umiejętności Rolniczych w bloku architektura krajobrazu. I miejsce w etapie szkolnym.",
+    "icon": "🏆",
     "link": ""
   },
   {
     "id": 3,
-    "title": "Projekt Aplikacji Społecznościowej",
-    "date": "2024",
-    "description": "Autorski projekt platformy łączącej wolontariuszy z lokalnymi organizacjami pozarządowymi. Wykorzystane technologie: React, Node.js, MongoDB.",
-    "icon": "💡",
+    "title": "I Miejsce w Konkursie Wiedzy o Drzewach",
+    "date": "2024/2025",
+    "description": "Zdobycie pierwszego miejsca w konkursie z wiedzy o drzewach organizowanym w ZSBiG.",
+    "icon": "🥇",
     "link": ""
   },
   {
     "id": 4,
-    "title": "Wyróżnienie w Olimpiadzie Informatycznej",
-    "date": "2023",
-    "description": "Finalista etapu okręgowego Olimpiady Informatycznej. Znajomość algorytmiki i struktur danych na poziomie zaawansowanym.",
-    "icon": "📐",
+    "title": "Wyróżnienie w Konkursie Fotograficznym",
+    "date": "2023/2024",
+    "description": "Wyróżnienie w międzyszkolnym konkursie fotograficznym 'Chełm w obiektywie' oraz w konkursie 'Zmienność krajobrazu'. Prezentacja prac na wystawie w Muzeum Fotografii w Krakowie.",
+    "icon": "📷",
     "link": ""
   },
   {
     "id": 5,
-    "title": "Organizator Konferencji TechMeet",
-    "date": "2024",
-    "description": "Współorganizacja lokalnej konferencji technologicznej z udziałem 200+ uczestników i prelegentów z czołowych firm IT.",
-    "icon": "🎤",
+    "title": "Świadectwa z Wyróżnieniem",
+    "date": "2024 - 2026",
+    "description": "Uzyskanie świadectw z wyróżnieniem (czerwony pasek) na zakończenie klasy drugiej oraz kolejnych lat nauki w ZSBiG.",
+    "icon": "📜",
+    "link": ""
+  },
+  {
+    "id": 6,
+    "title": "Certyfikat Europejskiego Dnia Sportu Szkolnego 2025",
+    "date": "2025",
+    "description": "Międzynarodowy certyfikat za aktywny udział w Europejskim Dniu Sportu Szkolnego 2025.",
+    "icon": "🏅",
     "link": ""
   }
 ]
