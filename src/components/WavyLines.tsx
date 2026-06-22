@@ -2,6 +2,13 @@
 
 import { useEffect, useRef } from "react";
 
+const COLORS = [
+  "168, 152, 136",
+  "201, 187, 168",
+  "214, 201, 184",
+  "184, 169, 150",
+];
+
 export function WavyLines() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -11,22 +18,23 @@ export function WavyLines() {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
+    const blobs = Array.from({ length: 5 }, (_, i) => ({
+      x: Math.random() * 1.2 - 0.1,
+      y: Math.random() * 1.2 - 0.1,
+      radius: 0.2 + Math.random() * 0.3,
+      color: COLORS[i % COLORS.length],
+      speedX: (Math.random() - 0.5) * 0.002,
+      speedY: (Math.random() - 0.5) * 0.002,
+      phaseX: Math.random() * Math.PI * 2,
+      phaseY: Math.random() * Math.PI * 2,
+    }));
+
     const resize = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
     };
     resize();
     window.addEventListener("resize", resize);
-
-    const lines = Array.from({ length: 4 }, (_, i) => ({
-      y: 0.2 + i * 0.2,
-      amplitude: 30 + i * 20,
-      frequency: 0.002 + i * 0.0005,
-      speed: 0.3 + i * 0.15,
-      phase: i * 1.5,
-      color: `rgba(168, 152, 136, ${0.04 + i * 0.02})`,
-      lineWidth: 1 + i * 0.5,
-    }));
 
     let animId: number;
     let time = 0;
@@ -35,24 +43,22 @@ export function WavyLines() {
       time += 1;
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      for (const line of lines) {
-        ctx.beginPath();
-        ctx.strokeStyle = line.color;
-        ctx.lineWidth = line.lineWidth;
+      for (const blob of blobs) {
+        const cx =
+          canvas.width * blob.x +
+          Math.sin(time * blob.speedX + blob.phaseX) * canvas.width * 0.05;
+        const cy =
+          canvas.height * blob.y +
+          Math.cos(time * blob.speedY + blob.phaseY) * canvas.height * 0.05;
+        const r = canvas.width * blob.radius;
 
-        for (let x = 0; x <= canvas.width; x += 2) {
-          const y =
-            canvas.height * line.y +
-            Math.sin(x * line.frequency + time * line.speed + line.phase) *
-              line.amplitude +
-            Math.sin(x * line.frequency * 1.7 + time * line.speed * 0.6 + line.phase + 2) *
-              line.amplitude * 0.4;
+        const gradient = ctx.createRadialGradient(cx, cy, 0, cx, cy, r);
+        gradient.addColorStop(0, `rgba(${blob.color}, 0.12)`);
+        gradient.addColorStop(0.4, `rgba(${blob.color}, 0.06)`);
+        gradient.addColorStop(1, `rgba(${blob.color}, 0)`);
 
-          if (x === 0) ctx.moveTo(x, y);
-          else ctx.lineTo(x, y);
-        }
-
-        ctx.stroke();
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
       }
 
       animId = requestAnimationFrame(draw);
