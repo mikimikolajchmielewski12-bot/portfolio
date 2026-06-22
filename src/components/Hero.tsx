@@ -2,6 +2,7 @@
 
 import { ProfileImage3D } from "./ProfileImage3D";
 import { ScrollReveal } from "./ScrollReveal";
+import { TextReveal } from "./TextReveal";
 import { profile } from "@/lib/data";
 import { asset } from "@/lib/asset";
 
@@ -21,11 +22,13 @@ export function Hero() {
             </div>
           </ScrollReveal>
 
-          <ScrollReveal delay={0.2}>
+          <ScrollReveal delay={0.2} variant="zoomIn">
             <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-cream leading-[0.9] tracking-[-0.02em] uppercase mb-4">
-              {profile.name.split(" ")[0]}
+              <TextReveal text={profile.name.split(" ")[0]} delay={0.3} />
               <br />
-              <span className="earth-gradient">{profile.name.split(" ").slice(1).join(" ")}</span>
+              <span className="earth-gradient inline-block">
+                <TextReveal text={profile.name.split(" ").slice(1).join(" ")} delay={0.6} />
+              </span>
             </h1>
           </ScrollReveal>
 
@@ -41,18 +44,18 @@ export function Hero() {
             </p>
           </ScrollReveal>
 
-          <ScrollReveal delay={0.6}>
+          <ScrollReveal delay={0.6} variant="scaleIn">
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
               <a
                 href="#contact"
-                className="group relative px-8 py-3 bg-earth text-black text-sm tracking-[0.2em] uppercase font-semibold overflow-hidden rounded-full transition-all duration-300 hover:shadow-[0_0_30px_rgba(168,152,136,0.35)]"
+                className="group relative px-8 py-3 bg-earth text-black text-sm tracking-[0.2em] uppercase font-semibold overflow-hidden rounded-full transition-all duration-300 hover:shadow-[0_0_40px_rgba(168,152,136,0.5)] hover:scale-105"
               >
                 <span className="relative z-10">Kontakt</span>
                 <div className="absolute inset-0 bg-earth-light opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </a>
               <a
                 href="#education"
-                className="group relative px-8 py-3 border border-earth/30 text-cream text-sm tracking-[0.2em] uppercase overflow-hidden rounded-full transition-all duration-300 hover:border-earth/60"
+                className="group relative px-8 py-3 border border-earth/30 text-cream text-sm tracking-[0.2em] uppercase overflow-hidden rounded-full transition-all duration-300 hover:border-earth/60 hover:scale-105"
               >
                 <span className="relative z-10">Zobacz więcej</span>
               </a>

@@ -18,7 +18,7 @@ export function AchievementsSection() {
           </div>
         </ScrollReveal>
 
-        <ScrollReveal delay={0.1}>
+        <ScrollReveal delay={0.1} variant="scaleIn">
           <h2 className="text-4xl md:text-5xl font-bold text-cream leading-[1.1] tracking-[-0.02em] uppercase mb-16">
             Moje
             <br />

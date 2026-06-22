@@ -1,6 +1,7 @@
 "use client";
 
 import { ScrollReveal } from "./ScrollReveal";
+import { TextReveal } from "./TextReveal";
 import { profile } from "@/lib/data";
 import Image from "next/image";
 import { asset } from "@/lib/asset";
@@ -38,11 +39,11 @@ export function AboutSection() {
           </ScrollReveal>
 
           <div>
-            <ScrollReveal delay={0.3}>
+            <ScrollReveal delay={0.3} variant="slideLeft">
               <h2 className="text-4xl md:text-5xl font-bold text-cream leading-[1.1] tracking-[-0.02em] uppercase mb-6">
                 Kim
                 <br />
-                <span className="earth-gradient">jestem?</span>
+                <span className="earth-gradient inline-block"><TextReveal text="jestem?" delay={0.4} /></span>
               </h2>
             </ScrollReveal>
 
@@ -52,7 +53,7 @@ export function AboutSection() {
               </p>
             </ScrollReveal>
 
-            <ScrollReveal delay={0.5}>
+            <ScrollReveal delay={0.5} variant="scaleIn">
               <div className="grid grid-cols-3 gap-6 mt-10">
                 {[
                   { value: "∞", label: "Pasja" },
