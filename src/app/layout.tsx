@@ -25,10 +25,12 @@ export default function RootLayout({
   return (
     <html lang="pl" className="scroll-smooth">
       <body className="bg-black text-cream font-antonio antialiased">
-        <WavyLines />
         <FloatingParticles />
         <Navigation />
-        <main>{children}</main>
+        <main className="relative">
+          <WavyLines />
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
