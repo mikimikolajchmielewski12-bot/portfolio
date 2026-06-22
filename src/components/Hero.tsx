@@ -1,6 +1,6 @@
 "use client";
 
-import { ProfileImage3D } from "./ProfileImage3D";
+import { RotatingProfile3D } from "./RotatingProfile3D";
 import { ScrollReveal } from "./ScrollReveal";
 import { profile } from "@/lib/data";
 import { asset } from "@/lib/asset";
@@ -62,7 +62,7 @@ export function Hero() {
 
         <div className="flex-1 order-1 md:order-2">
           <ScrollReveal delay={0.3}>
-            <ProfileImage3D src={asset(profile.avatar)} alt={profile.name} />
+            <RotatingProfile3D src={asset(profile.avatar)} alt={profile.name} />
           </ScrollReveal>
         </div>
       </div>

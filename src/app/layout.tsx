@@ -3,6 +3,7 @@ import "./globals.css";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { FloatingParticles } from "@/components/FloatingParticles";
+import { WavyLines } from "@/components/WavyLines";
 
 export const metadata: Metadata = {
   title: "Mikołaj Chmielewski | Portfolio",
@@ -24,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="pl" className="scroll-smooth">
       <body className="bg-black text-cream font-antonio antialiased">
+        <WavyLines />
         <FloatingParticles />
         <Navigation />
         <main>{children}</main>
