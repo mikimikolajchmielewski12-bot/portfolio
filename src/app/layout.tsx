@@ -5,13 +5,13 @@ import { Footer } from "@/components/Footer";
 import { FloatingParticles } from "@/components/FloatingParticles";
 
 export const metadata: Metadata = {
-  title: "Mikołaj Chmielewski | Premium Portfolio",
+  title: "Mikołaj Chmielewski | Portfolio",
   description:
     "Portfolio Mikołaja Chmielewskiego – kursy, szkolenia, wyjazdy, osiągnięcia i rozwój.",
   openGraph: {
-    title: "Mikołaj Chmielewski | Portfolio",
+    title: "Mikołaj Chmielewski Portfolio",
     description:
-      "Premium portfolio – kursy, szkolenia, wyjazdy i osiągnięcia.",
+      "Portfolio Mikołaja Chmielewskiego – kursy, szkolenia, wyjazdy, osiągnięcia i rozwój.",
     type: "website",
   },
 };

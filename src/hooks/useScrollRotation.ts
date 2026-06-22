@@ -20,7 +20,7 @@ export function useScrollRotation() {
         Math.max(0, (windowHeight - rect.top) / (windowHeight + elementHeight))
       );
 
-      setRotation(progress * 360);
+      setRotation((progress - 0.5) * 40);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });

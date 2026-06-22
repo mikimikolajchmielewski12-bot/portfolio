@@ -40,8 +40,9 @@ export function DiplomaCard3D({
       <div
         className="relative w-full transition-transform duration-100 ease-out"
         style={{
-          transform: `rotateY(${rotation}deg) rotateX(${Math.sin(rotation * (Math.PI / 180)) * 5}deg)`,
+          transform: `rotateY(${rotation}deg)`,
           transformStyle: "preserve-3d",
+          backfaceVisibility: "hidden",
         }}
       >
         <div className="glass rounded-2xl overflow-hidden group cursor-pointer">
