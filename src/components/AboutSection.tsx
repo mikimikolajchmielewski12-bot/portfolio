@@ -2,11 +2,44 @@
 
 import { ScrollReveal } from "./ScrollReveal";
 import { TextReveal } from "./TextReveal";
-import { profile } from "@/lib/data";
+import { profile, education, experience, trips } from "@/lib/data";
 import Image from "next/image";
 import { asset } from "@/lib/asset";
 
+const interests = [
+  "Architektura",
+  "Taternictwo",
+  "Dyplomacja",
+  "Social Media",
+  "Biomechanika",
+  "Zdrowy styl życia",
+];
+
+const stats = [
+  { value: education.length, suffix: "", label: "Kursy i certyfikaty", icon: "🎓" },
+  { value: experience.length, suffix: "", label: "Projekty społeczne", icon: "🤝" },
+  { value: trips.length, suffix: "", label: "Wyjazdy zagraniczne", icon: "🌍" },
+];
+
+function AnimatedStat({ value, suffix, label, icon, delay }: { value: number; suffix: string; label: string; icon: string; delay: number }) {
+  return (
+    <ScrollReveal delay={delay} variant="scaleIn">
+      <div className="text-center">
+        <div className="text-3xl md:text-4xl font-bold text-earth mb-1">
+          {value}{suffix}
+        </div>
+        <div className="flex items-center justify-center gap-2 mt-1">
+          <span className="text-base">{icon}</span>
+          <span className="text-cream/40 text-xs tracking-[0.2em] uppercase">{label}</span>
+        </div>
+      </div>
+    </ScrollReveal>
+  );
+}
+
 export function AboutSection() {
+  const paragraphs = profile.aboutDetailed.split("\n\n").filter(Boolean);
+
   return (
     <section id="about" className="relative py-32 px-6">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-earth/[0.02] to-transparent" />
@@ -21,7 +54,7 @@ export function AboutSection() {
           </div>
         </ScrollReveal>
 
-        <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+        <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-start">
           <ScrollReveal delay={0.2}>
             <div className="relative">
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden">
@@ -47,27 +80,29 @@ export function AboutSection() {
               </h2>
             </ScrollReveal>
 
-            <ScrollReveal delay={0.4}>
-              <p className="text-cream/60 text-base leading-relaxed mb-6">
-                {profile.aboutDetailed}
-              </p>
-            </ScrollReveal>
+            {paragraphs.map((p, i) => (
+              <ScrollReveal key={i} delay={0.4 + i * 0.1}>
+                <p className="text-cream/60 text-base leading-relaxed mb-4 last:mb-0">
+                  {p}
+                </p>
+              </ScrollReveal>
+            ))}
 
-            <ScrollReveal delay={0.5} variant="scaleIn">
-              <div className="grid grid-cols-3 gap-6 mt-10">
-                {[
-                  { value: "∞", label: "Pasja" },
-                  { value: "∞", label: "Rozwój" },
-                  { value: "∞", label: "Kursy" },
-                ].map((stat) => (
-                  <div key={stat.label} className="text-center">
-                    <div className="text-3xl md:text-4xl font-bold text-earth mb-1">
-                      {stat.value}
-                    </div>
-                    <div className="text-cream/40 text-xs tracking-[0.2em] uppercase">
-                      {stat.label}
-                    </div>
-                  </div>
+            <div className="grid grid-cols-3 gap-6 mt-10">
+              {stats.map((stat, i) => (
+                <AnimatedStat key={stat.label} {...stat} delay={0.6 + i * 0.1} />
+              ))}
+            </div>
+
+            <ScrollReveal delay={0.9} variant="fadeIn">
+              <div className="flex flex-wrap gap-2 mt-8 pt-6 border-t border-earth/10">
+                {interests.map((interest) => (
+                  <span
+                    key={interest}
+                    className="text-[10px] tracking-[0.2em] uppercase px-3 py-1.5 rounded-full border border-earth/20 text-earth/70 hover:text-earth hover:border-earth/40 transition-all duration-300"
+                  >
+                    {interest}
+                  </span>
                 ))}
               </div>
             </ScrollReveal>
