@@ -81,6 +81,26 @@ export function ContactSection() {
               </a>
               <span className="text-cream/20">|</span>
               <a
+                href={profile.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cream/40 hover:text-earth text-sm tracking-[0.2em] uppercase transition-colors relative group/link"
+              >
+                Facebook
+                <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-earth transition-all duration-300 group-hover/link:w-full" />
+              </a>
+              <span className="text-cream/20">|</span>
+              <a
+                href={profile.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cream/40 hover:text-earth text-sm tracking-[0.2em] uppercase transition-colors relative group/link"
+              >
+                YouTube
+                <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-earth transition-all duration-300 group-hover/link:w-full" />
+              </a>
+              <span className="text-cream/20">|</span>
+              <a
                 href={asset("/images/CV Mikołaj Chmielewski.pdf")}
                 download
                 className="text-cream/40 hover:text-earth text-sm tracking-[0.2em] uppercase transition-colors relative group/link"

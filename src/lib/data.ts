@@ -10,6 +10,8 @@ export interface Profile {
   phone: string;
   linkedin: string;
   instagram: string;
+  facebook: string;
+  youtube: string;
   github: string;
   website: string;
 }

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import { asset } from "@/lib/asset";
 
@@ -20,13 +19,30 @@ export function Footer() {
         </div>
 
         <div className="flex items-center gap-6">
-          <Link
+          <a
+            href="https://www.facebook.com/profile.php?id=100028005526534&locale=pl_PL"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-cream/30 hover:text-earth text-xs tracking-[0.15em] uppercase transition-colors"
+          >
+            Facebook
+          </a>
+          <a
+            href="https://www.youtube.com/@_mikolaj_jestem_"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-cream/30 hover:text-earth text-xs tracking-[0.15em] uppercase transition-colors"
+          >
+            YouTube
+          </a>
+          <a
             href="https://www.linkedin.com/in/miko%C5%82aj-chmielewski-aa18a82b3"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-cream/30 hover:text-earth text-xs tracking-[0.15em] uppercase transition-colors"
           >
             LinkedIn
-          </Link>
+          </a>
           <a
             href={asset("/images/CV Mikołaj Chmielewski.pdf")}
             download
