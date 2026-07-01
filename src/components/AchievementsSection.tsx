@@ -29,17 +29,22 @@ export function AchievementsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {achievements.map((item, index) => (
             <ScrollReveal key={item.id} delay={index * 0.1}>
-              <div className="glass rounded-2xl p-8 group hover:border-earth/30 transition-all duration-500 h-full">
-                <div className="text-4xl mb-4">{item.icon}</div>
-                <span className="text-earth/60 text-[10px] tracking-[0.2em] uppercase">
-                  {item.date}
-                </span>
-                <h3 className="text-lg text-cream tracking-[0.1em] uppercase mt-2 mb-3">
-                  {item.title}
-                </h3>
-                <p className="text-cream/50 text-sm leading-relaxed">
-                  {item.description}
-                </p>
+              <div className="glass rounded-2xl p-8 group hover:border-earth/30 transition-all duration-500 h-full relative overflow-hidden">
+                <div className="absolute inset-0 aurora-bg opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                <div className="relative z-10">
+                  <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-500 inline-block">
+                    {item.icon}
+                  </div>
+                  <span className="text-earth/60 text-[10px] tracking-[0.2em] uppercase">
+                    {item.date}
+                  </span>
+                  <h3 className="text-lg text-cream tracking-[0.1em] uppercase mt-2 mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="text-cream/50 text-sm leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
               </div>
             </ScrollReveal>
           ))}

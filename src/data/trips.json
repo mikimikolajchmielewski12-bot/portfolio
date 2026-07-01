@@ -46,5 +46,13 @@
     "date": "2026",
     "description": "Udział w Europejskim Forum Młodych Liderów — międzynarodowym wydarzeniu łączącym młodych liderów z całej Europy w celu debaty o przyszłości, technologii i społeczeństwie.",
     "image": "/images/trip-placeholder.svg"
+  },
+  {
+    "id": 7,
+    "title": "Erasmus+ Praktyki Zawodowe — Z Budowlanką Po Europie",
+    "location": "Faro, Portugalia",
+    "date": "05.2026",
+    "description": "Czterotygodniowe praktyki zawodowe w Faro w ramach programu Erasmus+. Zdobywanie doświadczenia w portugalskich przedsiębiorstwach, rozwój kompetencji językowych i poznawanie kultury regionu Algarve. Projekt nr 2025-1-PL01-KA121-VET-000312535.",
+    "image": "/images/trip-placeholder.svg"
   }
 ]

@@ -4,6 +4,9 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { FloatingParticles } from "@/components/FloatingParticles";
 import { WavyLines } from "@/components/WavyLines";
+import { ScrollProgress } from "@/components/ScrollProgress";
+import { GridBackground } from "@/components/GridBackground";
+import { NoiseTexture } from "@/components/NoiseTexture";
 
 export const metadata: Metadata = {
   title: "Mikołaj Chmielewski | Portfolio",
@@ -25,7 +28,10 @@ export default function RootLayout({
   return (
     <html lang="pl" className="scroll-smooth">
       <body className="bg-black text-cream font-antonio antialiased">
+        <ScrollProgress />
         <FloatingParticles />
+        <GridBackground />
+        <NoiseTexture />
         <Navigation />
         <main className="relative">
           <WavyLines />

@@ -85,7 +85,8 @@ const experienceDetails: Record<number, { bullets: { icon: string; text: string 
 export function ExperienceSection() {
   return (
     <section id="experience" className="relative py-32 px-6">
-      <div className="max-w-7xl mx-auto">
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-earth/[0.02] to-transparent" />
+      <div className="max-w-7xl mx-auto relative z-10">
         <ScrollReveal>
           <div className="flex items-center gap-4 mb-4">
             <span className="text-earth text-xs tracking-[0.3em] uppercase">
@@ -105,6 +106,7 @@ export function ExperienceSection() {
 
         <div className="relative">
           <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-[1px] bg-gradient-to-b from-earth/40 via-earth/20 to-transparent -translate-x-1/2" />
+          <div className="absolute left-0 md:left-1/2 top-[30%] bottom-[30%] w-[1px] bg-gradient-to-b from-transparent via-earth/10 to-transparent -translate-x-1/2 blur-sm" />
 
           {experience.map((item, index) => {
             const details = experienceDetails[item.id];
@@ -117,11 +119,15 @@ export function ExperienceSection() {
                 >
                   <div className="flex-1" />
 
-                  <div className="absolute left-0 md:left-1/2 top-0 w-4 h-4 -translate-x-1/2 rounded-full border-2 border-earth bg-black z-10" />
+                  <div className="absolute left-0 md:left-1/2 top-0 w-5 h-5 -translate-x-1/2 rounded-full border-2 border-earth bg-black z-10 group">
+                    <div className="w-full h-full rounded-full bg-earth/20 group-hover:bg-earth/40 transition-colors duration-500" />
+                    <div className="absolute -inset-2 rounded-full border border-earth/10 animate-ping-subtle" />
+                  </div>
 
                   <div className="flex-1 pl-8 md:pl-0">
-                    <div className="glass rounded-2xl p-8 hover:border-earth/30 transition-all duration-500">
-                      <div className="flex items-center gap-3 mb-3">
+                    <div className="glass rounded-2xl p-8 hover:border-earth/30 transition-all duration-500 relative overflow-hidden">
+                      <div className="absolute inset-0 aurora-bg opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                      <div className="flex items-center gap-3 mb-3 relative z-10">
                         <span
                           className={`text-[10px] tracking-[0.2em] uppercase px-3 py-1 rounded-full ${
                             item.type === "work"

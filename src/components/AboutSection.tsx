@@ -5,6 +5,8 @@ import { TextReveal } from "./TextReveal";
 import { profile, education, experience, trips } from "@/lib/data";
 import Image from "next/image";
 import { asset } from "@/lib/asset";
+import { AnimatedCounter } from "./AnimatedCounter";
+import { ImageReveal } from "./ImageReveal";
 
 const interests = [
   "Architektura",
@@ -24,12 +26,12 @@ const stats = [
 function AnimatedStat({ value, suffix, label, icon, delay }: { value: number; suffix: string; label: string; icon: string; delay: number }) {
   return (
     <ScrollReveal delay={delay} variant="scaleIn">
-      <div className="text-center">
+      <div className="text-center group">
         <div className="text-3xl md:text-4xl font-bold text-earth mb-1">
-          {value}{suffix}
+          <AnimatedCounter value={value} suffix={suffix} />
         </div>
         <div className="flex items-center justify-center gap-2 mt-1">
-          <span className="text-base">{icon}</span>
+          <span className="text-base group-hover:scale-110 transition-transform duration-300">{icon}</span>
           <span className="text-cream/40 text-xs tracking-[0.2em] uppercase">{label}</span>
         </div>
       </div>
@@ -57,17 +59,21 @@ export function AboutSection() {
         <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-start">
           <ScrollReveal delay={0.2}>
             <div className="relative">
-              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden">
-                <Image
-                  src={asset(profile.secondaryPhoto)}
-                  alt={profile.name}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 40vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-              </div>
+              <ImageReveal className="rounded-2xl">
+                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden">
+                  <Image
+                    src={asset(profile.secondaryPhoto)}
+                    alt={profile.name}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 40vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                </div>
+              </ImageReveal>
               <div className="absolute -bottom-4 -right-4 w-full h-full border border-earth/20 rounded-2xl -z-10" />
+              <div className="absolute -top-4 -left-4 w-20 h-20 border border-earth/10 rounded-full -z-10 animate-breathe" />
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 border border-earth/5 rounded-full -z-10 animate-spin-slow" />
             </div>
           </ScrollReveal>
 

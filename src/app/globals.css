@@ -128,6 +128,93 @@ html {
   animation: particle-drift linear infinite;
 }
 
+@keyframes border-shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-border-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(168, 152, 136, 0.05),
+    rgba(201, 187, 168, 0.15),
+    rgba(168, 152, 136, 0.05)
+  );
+  background-size: 200% 100%;
+  animation: border-shimmer 4s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.05); }
+}
+
+.animate-breathe {
+  animation: breathe 4s ease-in-out infinite;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+@keyframes ping-subtle {
+  0% { transform: scale(1); opacity: 0.4; }
+  50% { transform: scale(1.15); opacity: 0.2; }
+  100% { transform: scale(1); opacity: 0.4; }
+}
+
+.animate-ping-subtle {
+  animation: ping-subtle 3s ease-in-out infinite;
+}
+
+.card-glow {
+  position: relative;
+}
+
+.card-glow::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(
+    135deg,
+    transparent 0%,
+    rgba(168, 152, 136, 0.1) 25%,
+    rgba(201, 187, 168, 0.2) 50%,
+    rgba(168, 152, 136, 0.1) 75%,
+    transparent 100%
+  );
+  background-size: 200% 200%;
+  animation: border-shimmer 6s ease-in-out infinite;
+  z-index: -1;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+  padding: 1px;
+  pointer-events: none;
+}
+
+@keyframes aurora {
+  0% { background-position: 0% 50%; transform: rotate(0deg) scale(1); }
+  25% { background-position: 50% 100%; transform: rotate(90deg) scale(1.1); }
+  50% { background-position: 100% 50%; transform: rotate(180deg) scale(1); }
+  75% { background-position: 50% 0%; transform: rotate(270deg) scale(1.1); }
+  100% { background-position: 0% 50%; transform: rotate(360deg) scale(1); }
+}
+
+.aurora-bg {
+  background: conic-gradient(from 0deg, rgba(168,152,136,0.03), rgba(201,187,168,0.06), rgba(168,152,136,0.03), rgba(214,201,184,0.05), rgba(168,152,136,0.03));
+  background-size: 200% 200%;
+  animation: aurora 20s linear infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, ::before, ::after {
     animation-duration: 0.01ms !important;

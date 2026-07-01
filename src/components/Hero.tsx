@@ -5,6 +5,7 @@ import { ScrollReveal } from "./ScrollReveal";
 import { TextReveal } from "./TextReveal";
 import { profile } from "@/lib/data";
 import { asset } from "@/lib/asset";
+import { MagneticButton } from "./MagneticButton";
 
 export function Hero() {
   return (
@@ -46,19 +47,19 @@ export function Hero() {
 
           <ScrollReveal delay={0.6} variant="scaleIn">
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-              <a
+              <MagneticButton
                 href="#contact"
-                className="group relative px-8 py-3 bg-earth text-black text-sm tracking-[0.2em] uppercase font-semibold overflow-hidden rounded-full transition-all duration-300 hover:shadow-[0_0_40px_rgba(168,152,136,0.5)] hover:scale-105"
+                className="group relative px-8 py-3 bg-earth text-black text-sm tracking-[0.2em] uppercase font-semibold overflow-hidden rounded-full transition-all duration-300 hover:shadow-[0_0_40px_rgba(168,152,136,0.5)]"
               >
                 <span className="relative z-10">Kontakt</span>
                 <div className="absolute inset-0 bg-earth-light opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </a>
-              <a
+              </MagneticButton>
+              <MagneticButton
                 href="#education"
-                className="group relative px-8 py-3 border border-earth/30 text-cream text-sm tracking-[0.2em] uppercase overflow-hidden rounded-full transition-all duration-300 hover:border-earth/60 hover:scale-105"
+                className="group relative px-8 py-3 border border-earth/30 text-cream text-sm tracking-[0.2em] uppercase overflow-hidden rounded-full transition-all duration-300 hover:border-earth/60"
               >
                 <span className="relative z-10">Zobacz więcej</span>
-              </a>
+              </MagneticButton>
             </div>
           </ScrollReveal>
         </div>
