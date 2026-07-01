@@ -12,7 +12,12 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(168,152,136,0.1)_0%,_transparent_70%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_rgba(248,239,228,0.03)_0%,_transparent_50%)]" />
+      <InstagramPhoto
+        src="/images/instagram/post_3.jpg"
+        size={65}
+        delay={0.9}
+        className="top-40 right-12 rotate-12 opacity-25 hidden lg:block"
+      />
       <InstagramPhoto
         src="/images/instagram/post_1.jpg"
         size={80}

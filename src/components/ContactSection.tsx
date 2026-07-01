@@ -13,13 +13,13 @@ export function ContactSection() {
 
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <InstagramPhoto
-          src="/images/instagram/post_1.jpg"
+          src="/images/instagram/post_3.jpg"
           size={75}
           delay={0.6}
           className="top-10 -left-12 -rotate-12 opacity-25 hidden md:block"
         />
         <InstagramPhoto
-          src="/images/instagram/post_2.jpg"
+          src="/images/instagram/post_4.jpg"
           size={85}
           delay={0.8}
           className="bottom-10 -right-12 rotate-6 opacity-25 hidden md:block"

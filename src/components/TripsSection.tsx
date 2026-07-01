@@ -29,6 +29,12 @@ export function TripsSection() {
           delay={0.5}
           className="-left-8 top-60 -rotate-6 opacity-35 hidden md:block"
         />
+        <InstagramPhoto
+          src="/images/instagram/post_3.jpg"
+          size={80}
+          delay={0.7}
+          className="-right-6 top-32 rotate-12 opacity-25 hidden md:block"
+        />
         <ScrollReveal>
           <div className="flex items-center gap-4 mb-4">
             <span className="text-earth text-xs tracking-[0.3em] uppercase">

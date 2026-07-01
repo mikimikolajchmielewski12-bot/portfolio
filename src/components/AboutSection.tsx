@@ -81,6 +81,12 @@ export function AboutSection() {
                 delay={1}
                 className="-right-8 top-8 rotate-6 animate-float"
               />
+              <InstagramPhoto
+                src="/images/instagram/post_3.jpg"
+                size={80}
+                delay={1.3}
+                className="-left-12 bottom-12 -rotate-12 opacity-40 hidden lg:block"
+              />
             </div>
           </ScrollReveal>
 

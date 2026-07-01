@@ -16,6 +16,12 @@ export function AchievementsSection() {
           delay={0.4}
           className="-right-6 top-40 rotate-12 opacity-30 hidden md:block"
         />
+        <InstagramPhoto
+          src="/images/instagram/post_4.jpg"
+          size={90}
+          delay={0.6}
+          className="-left-8 top-60 -rotate-6 opacity-25 hidden md:block"
+        />
         <ScrollReveal>
           <div className="flex items-center gap-4 mb-4">
             <span className="text-earth text-xs tracking-[0.3em] uppercase">
