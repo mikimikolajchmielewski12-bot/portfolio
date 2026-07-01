@@ -3,6 +3,7 @@
 import { ScrollReveal } from "./ScrollReveal";
 import { IconBullet } from "./IconBullet";
 import { MetricWidget } from "./MetricWidget";
+import { InstagramPhoto } from "./InstagramPhoto";
 import { experience } from "@/lib/data";
 
 const experienceDetails: Record<number, { bullets: { icon: string; text: string }[]; metrics: { icon: string; value: string; label: string }[] }> = {
@@ -87,6 +88,12 @@ export function ExperienceSection() {
     <section id="experience" className="relative py-32 px-6">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-earth/[0.02] to-transparent" />
       <div className="max-w-7xl mx-auto relative z-10">
+        <InstagramPhoto
+          src="/images/instagram/post_2.jpg"
+          size={90}
+          delay={0.3}
+          className="-left-4 top-20 -rotate-12 opacity-60 hidden lg:block"
+        />
         <ScrollReveal>
           <div className="flex items-center gap-4 mb-4">
             <span className="text-earth text-xs tracking-[0.3em] uppercase">

@@ -7,6 +7,7 @@ import Image from "next/image";
 import { asset } from "@/lib/asset";
 import { AnimatedCounter } from "./AnimatedCounter";
 import { ImageReveal } from "./ImageReveal";
+import { InstagramPhoto } from "./InstagramPhoto";
 
 const interests = [
   "Architektura",
@@ -74,6 +75,12 @@ export function AboutSection() {
               <div className="absolute -bottom-4 -right-4 w-full h-full border border-earth/20 rounded-2xl -z-10" />
               <div className="absolute -top-4 -left-4 w-20 h-20 border border-earth/10 rounded-full -z-10 animate-breathe" />
               <div className="absolute -bottom-6 -left-6 w-32 h-32 border border-earth/5 rounded-full -z-10 animate-spin-slow" />
+              <InstagramPhoto
+                src="/images/instagram/post_1.jpg"
+                size={100}
+                delay={1}
+                className="-right-8 top-8 rotate-6 animate-float"
+              />
             </div>
           </ScrollReveal>
 

@@ -6,12 +6,25 @@ import { TextReveal } from "./TextReveal";
 import { profile } from "@/lib/data";
 import { asset } from "@/lib/asset";
 import { MagneticButton } from "./MagneticButton";
+import { InstagramPhoto } from "./InstagramPhoto";
 
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(168,152,136,0.1)_0%,_transparent_70%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_rgba(248,239,228,0.03)_0%,_transparent_50%)]" />
+      <InstagramPhoto
+        src="/images/instagram/post_1.jpg"
+        size={80}
+        delay={0.5}
+        className="top-24 right-8 -rotate-6 opacity-40 hidden lg:block"
+      />
+      <InstagramPhoto
+        src="/images/instagram/post_2.jpg"
+        size={70}
+        delay={0.7}
+        className="bottom-32 left-8 rotate-12 opacity-30 hidden lg:block"
+      />
 
       <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center gap-12 md:gap-20">
         <div className="flex-1 order-2 md:order-1 text-center md:text-left">

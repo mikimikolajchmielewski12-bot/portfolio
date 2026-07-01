@@ -1,6 +1,7 @@
 "use client";
 
 import { ScrollReveal } from "./ScrollReveal";
+import { InstagramPhoto } from "./InstagramPhoto";
 import { achievements } from "@/lib/data";
 
 export function AchievementsSection() {
@@ -9,6 +10,12 @@ export function AchievementsSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-earth/[0.02] to-transparent" />
 
       <div className="max-w-7xl mx-auto">
+        <InstagramPhoto
+          src="/images/instagram/post_1.jpg"
+          size={100}
+          delay={0.4}
+          className="-right-6 top-40 rotate-12 opacity-30 hidden md:block"
+        />
         <ScrollReveal>
           <div className="flex items-center gap-4 mb-4">
             <span className="text-earth text-xs tracking-[0.3em] uppercase">

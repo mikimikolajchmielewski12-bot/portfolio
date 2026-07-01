@@ -4,6 +4,7 @@ import { ScrollReveal } from "./ScrollReveal";
 import { profile } from "@/lib/data";
 import { asset } from "@/lib/asset";
 import { MagneticButton } from "./MagneticButton";
+import { InstagramPhoto } from "./InstagramPhoto";
 
 export function ContactSection() {
   return (
@@ -11,6 +12,18 @@ export function ContactSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-earth/[0.03] to-transparent" />
 
       <div className="max-w-4xl mx-auto text-center relative z-10">
+        <InstagramPhoto
+          src="/images/instagram/post_1.jpg"
+          size={75}
+          delay={0.6}
+          className="top-10 -left-12 -rotate-12 opacity-25 hidden md:block"
+        />
+        <InstagramPhoto
+          src="/images/instagram/post_2.jpg"
+          size={85}
+          delay={0.8}
+          className="bottom-10 -right-12 rotate-6 opacity-25 hidden md:block"
+        />
         <ScrollReveal>
           <div className="flex items-center gap-4 mb-4 justify-center">
             <div className="h-[1px] w-12 bg-gradient-to-r from-transparent to-earth/30" />

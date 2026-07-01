@@ -2,6 +2,7 @@
 
 import { ScrollReveal } from "./ScrollReveal";
 import { EuropeMap } from "./EuropeMap";
+import { InstagramPhoto } from "./InstagramPhoto";
 import { trips } from "@/lib/data";
 
 function getFlagEmoji(country: string): string {
@@ -22,6 +23,12 @@ export function TripsSection() {
       <EuropeMap />
 
       <div className="max-w-7xl mx-auto relative z-10">
+        <InstagramPhoto
+          src="/images/instagram/post_2.jpg"
+          size={110}
+          delay={0.5}
+          className="-left-8 top-60 -rotate-6 opacity-35 hidden md:block"
+        />
         <ScrollReveal>
           <div className="flex items-center gap-4 mb-4">
             <span className="text-earth text-xs tracking-[0.3em] uppercase">
